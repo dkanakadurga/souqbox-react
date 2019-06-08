@@ -50,6 +50,21 @@ class NavTop extends React.Component {
             <MDBNavLink to="#">CONTACT</MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>
+    
+        <MDBNavbarNav right>
+          <MDBNavItem>
+            <MDBNavLink  to="#">SIGNUP </MDBNavLink>
+          </MDBNavItem>
+          <MDBNavItem>
+            <MDBNavLink to="#">LOGIN</MDBNavLink>
+          </MDBNavItem>
+         
+        </MDBNavbarNav>
+
+
+
+
+
         </MDBCollapse> 
         </MDBContainer>
            </MDBNavbar> 

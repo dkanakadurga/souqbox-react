@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Logo from './Logo';
-import NavTop from './NavTop';
-import NavAuth from './NavAuth';
 import Header from './Header';
 import bgImg from '../images/bgImg.jpg'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import NavTop from './NavTop';
-import NavAuth from './NavAuth';
 import Logo from './Logo';
 
 
@@ -27,7 +26,7 @@ render() {
         </MDBCol>
      </MDBRow>
         <NavTop collapse ={false} isWideEnough={false}/>
-        <NavAuth/>
+        
       </header>
 
     </div>
