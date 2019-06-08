@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutUs from './AboutUs';
 import HowItWorks from './HowItWorks';
+import Logo from './Logo';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -28,8 +29,12 @@ class NavTop extends React.Component {
     <div>
 
         <MDBNavbar fixed="top" dark expand="md">
-            <MDBContainer> 
-        
+          
+        <MDBContainer>
+
+        <MDBNavbarBrand>
+        <Logo />
+      </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.onClick} />
         <MDBCollapse isOpen={this.state.collapse} navbar> 
 
@@ -60,13 +65,9 @@ class NavTop extends React.Component {
           </MDBNavItem>
          
         </MDBNavbarNav>
-
-
-
-
-
-        </MDBCollapse> 
-        </MDBContainer>
+       </MDBCollapse> 
+       </MDBContainer>
+        
            </MDBNavbar> 
 
 

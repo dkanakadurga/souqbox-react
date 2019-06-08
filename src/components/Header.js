@@ -20,14 +20,8 @@ render() {
     return(
     <div>
      <header>
-     <MDBRow>
-        <MDBCol>
-        <Logo/>
-        </MDBCol>
-     </MDBRow>
-        <NavTop collapse ={false} isWideEnough={false}/>
-        
-      </header>
+       <NavTop collapse ={false} isWideEnough={false}/>
+     </header>
 
     </div>
 
