@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Logo from './Logo';
 import NavTop from './NavTop';
 import NavAuth from './NavAuth';
+import Header from './Header';
 import bgImg from '../images/bgImg.jpg'; 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -12,52 +13,23 @@ import { MDBNavbar, MDBNavbarBrand,MDBBtn, MDBNavbarNav, MDBNavbarToggler, MDBCo
 class AboutUs extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      collapse: this.props.collapse,
-      isWideEnough: this.props.isWideEnough,
-    };
-    
-  }
+    }
 
   render() {
     return (
-      <div>
-        
-          <MDBView src =  {bgImg}  >
-
-  <header>
-     <MDBRow>
-        <MDBCol>
-        <Logo/>
-        </MDBCol>
-     </MDBRow>
-
-                   <NavTop collapse ={false} isWideEnough={false}/>
-                   <NavAuth/>
-  </header>
-
-
+      <div> 
+          <MDBView src =  {bgImg}>
+            <Header/>
             <MDBMask overlay="white" className="flex-center flex-column text-white text-center">
-              <h2>Souqbox is building the new future
-                   of B2B marketplaces online.
-              </h2>
+              <h2>Souqbox is building the new future of B2B marketplaces online.</h2>
               <br/>
               <h2>Take 30 seconds to join revolution</h2>
-              <br />
-             
+              <br /> 
               <MDBBtn color="info">Create a marketplace now</MDBBtn>
               <br/>
               <a href = "#">Learn More</a>
-
-            </MDBMask>
-
-            
+            </MDBMask>     
           </MDBView>
-        
-
-        <main>
-          
-        </main>
       </div>
     );
   }
