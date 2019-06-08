@@ -9,7 +9,7 @@ import "mdbreact/dist/css/mdb.css";
 import { MDBNavbar, MDBNavbarBrand,MDBBtn, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer,MDBView, MDBMask, MDBRow, MDBCol } from 'mdbreact';
 
 
-class TopNav extends React.Component {
+class AboutUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -78,4 +78,4 @@ class TopNav extends React.Component {
   }
 }
 
-export default TopNav;
+export default AboutUs;

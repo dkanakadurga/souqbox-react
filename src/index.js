@@ -2,9 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import TopNav from './components/TopNav'
-//import * as serviceWorker from './serviceWorker';
+import AboutUs from './components/AboutUs'
 
-ReactDOM.render(<TopNav />, document.getElementById('root'));
-
-//serviceWorker.unregister();
+ReactDOM.render(<AboutUs />, document.getElementById('root'));
