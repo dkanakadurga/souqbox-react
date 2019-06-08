@@ -1,4 +1,6 @@
 import React from 'react';
+import AboutUs from './AboutUs';
+import HowItWorks from './HowItWorks';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -24,20 +26,19 @@ class NavTop extends React.Component {
  render() {
   return (
     <div>
-      <Router>
 
         <MDBNavbar fixed="top" dark expand="md">
-            <MDBContainer> */}
+            <MDBContainer> 
         
         <MDBNavbarToggler onClick={this.onClick} />
         <MDBCollapse isOpen={this.state.collapse} navbar> 
 
         <MDBNavbarNav left>
           <MDBNavItem active>
-            <MDBNavLink to="AboutUs">ABOUT US</MDBNavLink>
+            <MDBNavLink to="/AboutUs" component = {AboutUs}>ABOUT US</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="#">HOW IT WORKS</MDBNavLink>
+            <MDBNavLink to="/HowItWorks" component = {HowItWorks}>HOW IT WORKS</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink to="#">CASE STUDIES</MDBNavLink>
@@ -53,9 +54,6 @@ class NavTop extends React.Component {
         </MDBContainer>
            </MDBNavbar> 
 
-
-
-      </Router>
 
     </div>);
 }
