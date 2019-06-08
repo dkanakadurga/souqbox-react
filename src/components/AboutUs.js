@@ -13,16 +13,10 @@ class AboutUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapse: false,
-      isWideEnough: false,
+      collapse: this.props.collapse,
+      isWideEnough: this.props.isWideEnough,
     };
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick() {
-    this.setState({
-      collapse: !this.state.collapse,
-    });
+    
   }
 
   render() {
@@ -37,18 +31,9 @@ class AboutUs extends React.Component {
         <Logo/>
         </MDBCol>
      </MDBRow>
-     <MDBNavbar fixed="top" dark expand="md">
-            <MDBContainer>
-             
-              {/* <MDBNavbarToggler onClick={this.onClick} />
-             <MDBCollapse isOpen={this.state.collapse} navbar> */}
-                   <NavTop />
-                   <NavAuth/>
-              {/* </MDBCollapse> */}
-            </MDBContainer>
-        </MDBNavbar>
 
-       
+                   <NavTop collapse ={false} isWideEnough={false}/>
+                   <NavAuth/>
   </header>
 
 

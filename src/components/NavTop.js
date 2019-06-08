@@ -5,18 +5,32 @@ import "mdbreact/dist/css/mdb.css";
 import { MDBNavbar, MDBNavbarBrand, MDBBtn, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBView, MDBMask } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import '../css/style.css';
-function NavTop() {
+
+class NavTop extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapse: this.props.collapse,
+      isWideEnough: this.props.isWideEnough,
+    };
+    this.onClick = this.onClick.bind(this);
+  }
+  onClick() {
+    this.setState({
+      collapse: !this.state.collapse,
+    });
+  }
+
+ render() {
   return (
     <div>
       <Router>
 
-        {/* <MDBNavbar fixed="top" dark expand="md">
+        <MDBNavbar fixed="top" dark expand="md">
             <MDBContainer> */}
-        {/* <MDBNavbarBrand href="/">
-                <strong>Navbar</strong>
-              </MDBNavbarBrand> */}
-        {/* <MDBNavbarToggler onClick={this.onClick} /> */}
-        {/* <MDBCollapse isOpen={this.state.collapse} navbar> */}
+        
+        <MDBNavbarToggler onClick={this.onClick} />
+        <MDBCollapse isOpen={this.state.collapse} navbar> 
 
         <MDBNavbarNav left>
           <MDBNavItem active>
@@ -35,9 +49,9 @@ function NavTop() {
             <MDBNavLink to="#">CONTACT</MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>
-        {/* </MDBCollapse> */}
-        {/* </MDBContainer>
-           </MDBNavbar>  */}
+        </MDBCollapse> 
+        </MDBContainer>
+           </MDBNavbar> 
 
 
 
@@ -45,6 +59,6 @@ function NavTop() {
 
     </div>);
 }
-
+}
 export default NavTop;
 
