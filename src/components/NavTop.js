@@ -7,7 +7,7 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import { MDBNavbar, MDBNavbarBrand, MDBBtn, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBView, MDBMask } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
-import '../css/style.css';
+
 
 class NavTop extends React.Component {
   constructor(props) {

@@ -9,10 +9,6 @@ import { MDBNavbar, MDBNavbarBrand,MDBBtn, MDBNavbarNav, MDBNavbarToggler, MDBCo
 class Header extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {
-        collapse: this.props.collapse,
-        isWideEnough: this.props.isWideEnough,
-      };
    
     }
 
